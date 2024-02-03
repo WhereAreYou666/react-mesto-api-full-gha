@@ -1,0 +1,5 @@
+.element {
+  max-width: 282px;
+  display: grid;
+  position: relative;
+}

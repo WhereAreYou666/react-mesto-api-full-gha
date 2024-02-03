@@ -1,0 +1,24 @@
+.popup__error_active {
+  color: red;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  opacity: 1;
+  padding-top: 4px;
+  margin: 0 auto;
+  border-top: 1px solid red;
+  min-height: 25px;
+}
+
+.popup__error_active:last-of-type {
+  margin-bottom: 17px;
+}
+
+@media screen and (max-width: 638px) {
+  
+  .popup__error_active:last-of-type {
+    margin-bottom: 14px;
+  }
+
+}

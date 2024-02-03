@@ -1,0 +1,15 @@
+.authentication__register-link {
+  color: #FFF;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  transition: opacity 0.6s;
+}
+
+
+.authentication__register-link:hover {
+  opacity: 0.5;
+}
