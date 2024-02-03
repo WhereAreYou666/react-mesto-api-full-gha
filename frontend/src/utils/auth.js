@@ -1,4 +1,4 @@
-export const BASE_URL = 'https://api.rpmesto.nomoredomains.nomoredomainsmonster.ru'; //http://localhost:3000
+export const BASE_URL = 'http://localhost:3000'; //http://localhost:3000
 
 const checkRes = (res) => {
   if (res.ok) {

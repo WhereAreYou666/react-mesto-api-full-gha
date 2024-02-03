@@ -51,7 +51,7 @@ function App() {
   }, [loggedIn]);
 
   const api = new Api({
-    url: 'https://api.rpmesto.nomoredomains.nomoredomainsmonster.ru',
+    url: 'http://localhost:3000',
     headers: {
       'Content-Type': 'application/json',
       'Authorization': `Bearer ${localStorage.getItem('jwt')}`
