@@ -3,7 +3,6 @@ const jwt = require('jsonwebtoken');
 const User = require('../models/user');
 const NotFoundError = require('../errors/NotFoundError');
 const InputError = require('../errors/InputError');
-const AuthorizationError = require('../errors/AuthorizationError');
 const DuplicateError = require('../errors/DuplicateError');
 const { getSecret } = require('../utils/secrets');
 
