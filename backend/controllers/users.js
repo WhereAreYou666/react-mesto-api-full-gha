@@ -111,12 +111,12 @@ module.exports.login = (req, res, next) => {
 
   User.findUserByCredentials(email, password)
     .then((user) => {
-      if (user) {
-        const token = jwt.sign({ _id: user._id }, getSecret(), { expiresIn: '7d' });
-        res.send({ token });
-      } else {
-        throw new AuthorizationError('Неправильные почта или пароль');
-      }
+      const token = jwt.sign(
+        { _id: user._id },
+        getSecret(),
+        { expiresIn: '7d' },
+      );
+      res.send({ token });
     })
     .catch(next);
 };
@@ -124,11 +124,6 @@ module.exports.login = (req, res, next) => {
 module.exports.getCurrentUser = (req, res, next) => {
   const { _id } = req.user;
   User.find({ _id })
-    .then((user) => {
-      if (!user) {
-        throw new NotFoundError('Пользователь не найден');
-      }
-      res.send({ data: user[0] });
-    })
+    .then((user) => res.send({ data: user[0] }))
     .catch(next);
 };
