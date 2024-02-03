@@ -24,9 +24,7 @@ const limiter = rateLimit({
 
 const app = express();
 
-//app.use(cors());
-
-app.use(cors({origin: ['http://localhost:3001']}))
+app.use(cors());
 
 mongoose.connect('mongodb://127.0.0.1:27017/mestodb');
 
