@@ -9,7 +9,7 @@
 
 ## Ссылки на проект
 
-IP-адрес 84.201.174.32
+IP 84.201.174.32
 
 Frontend https://rpmesto.nomoredomainsmonster.ru
 
